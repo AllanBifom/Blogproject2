@@ -1,5 +1,7 @@
 .App {
   text-align: center;
+  align-items: center;
+  align-content: center;
 }
 
 .App-logo {
@@ -23,9 +25,50 @@
   font-size: calc(10px + 2vmin);
   color: white;
 }
+.blog-preview {
+  padding: 10px 16px;
+  margin: 20px 0;
+  border-bottom: 1px solid #fafafa;
+}
+.blog-preview:hover {
+  box-shadow: 0 2px 5px #070300;
+}
+.blog-preview a {
+  text-decoration: none;
+}
+.blog-preview h2 {
+  font-size: 20px;
+  color: aliceblue;
+  margin-bottom: 8px;
+}
 
 .App-link {
   color: #61dafb;
+}
+.Welcome {
+  background-color: darkgray;
+  margin: 10px;
+  height: 850px;
+  width: 680px;
+  font-size: 0;
+  opacity: 0.9;
+}
+.blog-details h2 {
+  font-size: 20px;
+  color: aliceblue;
+  margin-bottom: 10px;
+}
+.blog-details div {
+  margin: 20px 0;
+  height: 100%;
+  width: 100%;
+}
+:root {
+  --mainDark: #343a40;
+  --mainGrey: rgba(109, 109, 109);
+  --mainLightGrey: rgba(172, 172, 172);
+  --mainWhite: #fff;
+  --mainBlue: #007bff;
 }
 
 @keyframes App-logo-spin {

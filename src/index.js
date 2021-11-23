@@ -1,17 +1,47 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
+import { render } from "react-dom";
 import './index.css';
+import {
+  BrowserRouter,
+  Routes,
+  Route,
+} from "react-router-dom";
 import App from './App';
-import reportWebVitals from './reportWebVitals';
+import Login from './Login';
+import SignUp from './SignUp';
+import StaffLogin from './StaffLogin'
+import StaffSignUp from './StaffSignUp'
+import DashBoard from './DashBoard'
+import Meetings from './Meetings'
+import About from './About';
+import Staff from './Staff';
+import Admin from './Admin';
+import StaffBoard from './StaffBoard';
+import BlogDetails from "./BlogDetails";
 
-ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
-  document.getElementById('root')
+import 'bootstrap/dist/css/bootstrap.css';
+// Put any other imports below so that CSS from your
+// components takes precedence over default styles.
+
+const rootElement = document.getElementById("root");
+
+render(
+  <BrowserRouter >
+    <Routes>
+      <Route path="/" element={<App />} />
+      <Route path="/Login" element={<Login />} />
+      <Route path="/SignUp" element={<SignUp />} />
+      <Route path="/StaffLogin" element={<StaffLogin />} />
+      <Route path="/StaffSignUp" element={<StaffSignUp/>} />
+      <Route path="/DashBoard" element={<DashBoard/>} />
+      <Route path="/Meetings" element={<Meetings />} />
+      <Route path="/About" element={<About />} />
+      <Route path="/Staff" element={<Staff />} />
+      <Route path="/Admin" element={<Admin />} />
+      <Route path="/StaffBoard" element={<StaffBoard />} />
+      <Route path ="/blogs/:id" element={<BlogDetails />} />
+    </Routes>
+    
+  </BrowserRouter>,
+  rootElement
 );
-
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
