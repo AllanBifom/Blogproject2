@@ -1,12 +1,12 @@
-import logo from './logo.svg';
+
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css'
 import Button from 'react-bootstrap/Button'
-import {Row, Col, Container, Carousel, Stack} from 'react-bootstrap'
+import {Carousel, Stack} from 'react-bootstrap'
 import oldGuy from "./Images/oldguysmilling.jpeg"
 import happyFamily from './Images/happyFamily.jpeg'
 import HappyHeart from "./Images/Happy-Heart.jpeg"
-import { NavLink, useNavigate } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 
 
 function App() {
@@ -16,6 +16,9 @@ function App() {
   }
   const goSignUp = () =>{
     Navigate("/SignUp")
+  }
+  const goAdmin = () =>{
+    Navigate("/AdminLogin")
   }
   return (
     <div >
@@ -46,7 +49,7 @@ function App() {
     <img
       
       className="d-block w-100 h-25"
-      src={happyFamily}
+      src={oldGuy}
       alt="Second slide"
     />
     </div>
@@ -60,7 +63,7 @@ function App() {
     <div>
     <img
       className="d-block w-100 h-25"
-      src={happyFamily}
+      src={HappyHeart}
       alt="Third slide"
     />
     </div>
@@ -77,6 +80,14 @@ function App() {
 <Stack gap={2} className="col-md-5 mx-auto">
   <Button variant="secondary" onClick={goLogin}>login</Button>
   <Button variant="outline-secondary"onClick={goSignUp}>SignUp</Button>
+</Stack>
+<br/>
+<br/>
+<br/>
+
+<Stack gap={2} className="col-md-5 mx-auto">
+  <h3 style={{fontFamily:"Farah", textAlign:"center",color:"aliceblue"}}> Admins Access down here</h3>
+  <Button variant="secondary" onClick={goAdmin}>Admin Only</Button>
 </Stack>
         
       

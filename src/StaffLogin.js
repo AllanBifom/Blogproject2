@@ -1,15 +1,12 @@
-import React, {Component, useState} from 'react';
+import React, {useState} from 'react';
 import './App.css';
-import {Button, Form, FormGroup, Stack, Input, Col, Container, Row} from 'react-bootstrap'
+import {Button, Form, Stack, Col, Container, Row} from 'react-bootstrap'
 import { NavLink, useNavigate } from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.min.css'
 import Axios from "axios"
 
 function StaffLogin(){
     let Navigate = useNavigate();
-    const goSignUp = () =>{
-    Navigate("/StaffSignUp")
-    }
     const login = () => {
         Axios.post('http://localhost:3001/stafflogin', {
             username: username, 
@@ -51,6 +48,8 @@ function StaffLogin(){
                             </Button>
                             <br/>
                             <Form.Text>Are you a user? <NavLink activeClassName="active" to="/Login">UserLogin</NavLink></Form.Text>
+                            <br/>
+                            <Form.Text>{loginstatus}</Form.Text>
                         </Form>
                     </Col>
             

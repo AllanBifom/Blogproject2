@@ -1,6 +1,6 @@
 import NavBar from "./Navbar";
 import Footer from "./footer/Footer";
-import {Row, Col, Container, Carousel, Stack} from 'react-bootstrap'
+import {Carousel} from 'react-bootstrap'
 import happyfamily from './Images/happyFamily.jpeg';
 import armsout from './Images/armsoutstretched.jpeg';
 import holdinghands from './Images/HoldingHandsimg.jpeg';
@@ -55,7 +55,7 @@ function DashBoard(){
     <Carousel.Caption>
         <h3>Stay Connected</h3>
         <p>Connect with people around the world, Be mentored by professionals and work on growing together.
-            
+
         </p>
     </Carousel.Caption>
     </Carousel.Item>

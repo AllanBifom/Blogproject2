@@ -154,19 +154,19 @@ function Admin(){
     <Form className="p-3"onSubmit={handleSubmit2}>
         <h3 style={{textAlign:"centre",color:"aliceblue"}}> Meeting Board </h3>
     <Form.Group className="mb-3" controlId="formBasicEmail">
-    <Form.Control type="email" placeholder="Enter Topic" onChange={(e) => setTopic(e.target.value)}/>
+    <Form.Control type="text" placeholder="Enter Topic" onChange={(e) => setTopic(e.target.value)}/>
     <Form.Text className="text-muted">
     </Form.Text>
     </Form.Group>
 
     <Form.Group className="mb-3" controlId="formBasicEmail">
-    <Form.Control type="email" placeholder="Post Link Url" onChange={(e) => setLink(e.target.value)}/>
+    <Form.Control type="text" placeholder="Post Link Url" onChange={(e) => setLink(e.target.value)}/>
     <Form.Text className="text-muted">
     </Form.Text>
     </Form.Group>
 
     <Form.Group className="mb-3" controlId="formBasicPassword">
-    <Form.Control type="email" placeholder="Enter Host " onChange={(e) => setHost(e.target.value)}/>
+    <Form.Control type="text" placeholder="Enter Host " onChange={(e) => setHost(e.target.value)}/>
     </Form.Group>
     {!IsPending &&<Button variant="primary" type="submit">
     Add A new meeting

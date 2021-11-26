@@ -18,6 +18,7 @@ import Staff from './Staff';
 import Admin from './Admin';
 import StaffBoard from './StaffBoard';
 import BlogDetails from "./BlogDetails";
+import AdminLogin from './AdminLogin';
 
 import 'bootstrap/dist/css/bootstrap.css';
 // Put any other imports below so that CSS from your
@@ -40,6 +41,7 @@ render(
       <Route path="/Admin" element={<Admin />} />
       <Route path="/StaffBoard" element={<StaffBoard />} />
       <Route path ="/blogs/:id" element={<BlogDetails />} />
+      <Route path ="/AdminLogin" element={<AdminLogin />} />
     </Routes>
     
   </BrowserRouter>,

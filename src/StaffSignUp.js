@@ -1,7 +1,7 @@
-import React, {Component, useState} from 'react';
+import React, {useState} from 'react';
 import './App.css';
-import {Button, Form, FormGroup, Stack, Input, Col, Container, Row} from 'react-bootstrap'
-import { NavLink, useNavigate } from 'react-router-dom';
+import {Button, Form, Stack, Col, Container, Row} from 'react-bootstrap'
+import { useNavigate } from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Axios from 'axios';
 
@@ -24,7 +24,7 @@ function StaffSignUp(){
             email: email}).then((response)=> {
                 console.log(response)
             })
-            Navigate("/StaffLogin")
+            Navigate("/Admin")
         }
 
     }
@@ -80,7 +80,7 @@ function StaffSignUp(){
                                 <Form.Control type="password" placeholder="Password" onChange={(e)=> {setconfirmpassword(e.target.value)}}/>
                             </Form.Group>
                             
-                            <Button variant="info" size="lg">
+                            <Button variant="info" size="lg" onClick={staffregister}>
                                 submit
                             </Button>
                             <br/>

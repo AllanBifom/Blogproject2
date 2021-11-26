@@ -1,7 +1,7 @@
-import React, {Component, useState} from 'react';
+import React, {useState} from 'react';
 import './App.css';
-import {Button, Form, FormGroup, Stack, Input, Col, Container, Row} from 'react-bootstrap'
-import { NavLink, useNavigate } from 'react-router-dom';
+import {Button, Form, Stack, Col, Container, Row} from 'react-bootstrap'
+import { useNavigate } from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.min.css'
 import Axios from "axios"
 

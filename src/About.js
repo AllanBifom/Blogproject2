@@ -1,8 +1,7 @@
 import Footer from "./footer/Footer"
 import NavBar from "./Navbar"
-import Accordion from 'react-bootstrap/Accordion'
 import 'bootstrap/dist/css/bootstrap.css';
-import {Row, Col, Container, Form, Button, Image} from 'react-bootstrap'
+import {Row, Col, Container, Image} from 'react-bootstrap'
 import oldguysmiling from "./Images/oldguysmilling.jpeg"
 import handheart from "./Images/handheart.jpeg"
 import jealousy from "./Images/jealousy.jpeg"

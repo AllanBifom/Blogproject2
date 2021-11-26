@@ -2,7 +2,7 @@ import React from "react";
 import '../App.css'
 import styled from "styled-components";
 import {  } from "react-bootstrap";
-import { MDBCol, MDBContainer, MDBRow, MDBFooter } from "mdbreact";
+import { MDBCol, MDBContainer, MDBRow} from "mdbreact";
 
 const Footer = () => {
     const MDBFooter = styled.footer`

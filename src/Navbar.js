@@ -1,4 +1,4 @@
-import {Button, Form, Nav, Navbar, Offcanvas, NavDropdown, Container, FormControl} from 'react-bootstrap'
+import { Nav, Navbar, Offcanvas, NavDropdown, Container} from 'react-bootstrap'
 function NavBar(){
     return(
     <Navbar bg="info" expand={false} mb-5>
